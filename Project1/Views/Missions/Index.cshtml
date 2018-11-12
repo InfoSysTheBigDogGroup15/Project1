@@ -52,9 +52,9 @@
 <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">Dropdown</button>
     <div id="myDropdown" class="dropdown-content">
-        @Html.ActionLink("Product 1 ", "Display", "Missions", new { num = 1 })
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        @Html.ActionLink("Product 1 ", "Display", "Missions", new { num = 1 }, null)
+        @Html.ActionLink("Product 2 ", "Display", "Missions", new { num = 2}, null)
+        @Html.ActionLink("Product 3 ", "Display", "Missions", new { num = 3}, null)
     </div>
 </div>
 

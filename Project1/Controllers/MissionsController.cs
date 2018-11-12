@@ -20,7 +20,7 @@ namespace Project1.Controllers
             ListOfProducts.Add(new Product("Straw 3", "You", "Sandy", "English"));
             return View();
         }
-        public ActionResult Display(int? num)
+        public ActionResult Display(int num)
         {
             Product Send2View;
             if (num==1)
