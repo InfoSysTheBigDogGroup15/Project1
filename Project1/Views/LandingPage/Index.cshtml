@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
@@ -8,3 +7,51 @@
 @Html.ActionLink("Missions", "Index", "About us ", new { area = "" })
 @Html.ActionLink("Contact", "Index", "Contact", new { area = "" })
 
+
+<head>
+    <link rel="stylesheet" href="~/Content/GrantStyles.css">
+</head>
+<body>
+<div class=" container-fluid">
+    <div class=" jumbotron">
+        <h1>
+            Ready to make the switch?
+        </h1>
+        <p>
+            Our straws are 100% biodegradeable and can be used in many situations, anything from restaurants in paris to weddings on the beach.
+        </p>
+        <button type="button" class="btn btn-primary">Order straws for your business</button>
+        <button type="button" class="btn btn-danger">Order straws for your home</button>
+    </div>
+</div>
+<div class=" container-fluid">
+    <div class=" jumbotron">
+        <div class="videoWrapper">
+            <iframe width="560" height="349"
+            src="https://www.youtube.com/embed/Rr5Py1r9xjw" 
+            frameborder="0" allow="accelerometer; autoplay; 
+            encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+<div class=" container-fluid">
+    <div class=" jumbotron">
+        <h2>
+            Straw Facts
+        </h2>
+        <ul>
+            <li>
+                Straws make up 4% of plastic trash
+            </li>
+            <li>
+                Americans use 500 million drinking straws a day
+            </li>
+            <li>
+                Straws take 500 years to decompose
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
