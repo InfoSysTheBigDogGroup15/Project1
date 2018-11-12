@@ -14,31 +14,39 @@ namespace Project1.Controllers
         static public List<Product> ListOfProducts = new List<Product>();
         
         public ActionResult Index()
-        {
-            ListOfProducts.Add(new Product("Straw 1", "JD", "Provo", "English"));
-            ListOfProducts.Add(new Product("Straw 2", "Me", "SLC", "English"));
-            ListOfProducts.Add(new Product("Straw 3", "You", "Sandy", "English"));
+        {   if (ListOfProducts.Count == 0)
+            {
+                ListOfProducts.Add(new Product("Blockchain straw", "JD", "Provo", "English"));
+                ListOfProducts.Add(new Product("Bio straw", "Me", "SLC", "English"));
+                ListOfProducts.Add(new Product("Plasma Straw", "You", "Sandy", "English"));
+            }
             return View();
         }
-        public ActionResult Display(int num)
+        public ActionResult Display(int? num)
         {
-            Product Send2View;
+            int Send2View=0;
             if (num==1)
             {
-                Send2View = ListOfProducts[0];
-                //Send2View is option 1
+                Send2View = 0;
+                //Send2View is option 
             }
             else if (num==2)
             {
-                Send2View = ListOfProducts[1];
+                Send2View = 1;
                 //Send2View is option 2
+            }
+            else if (ListOfProducts.Count<=0)
+            {
+                ListOfProducts.Add(new Product("Blockchain straw", "JD", "Provo", "English"));
+                ListOfProducts.Add(new Product("Bio straw", "Me", "SLC", "English"));
+                ListOfProducts.Add(new Product("Plasma Straw", "You", "Sandy", "English"));
+
             }
             else
             {
-                Send2View = ListOfProducts[2];
-                //Send2Veiw is option 3
+
             }
-            return View(Send2View);
+            return View(ListOfProducts);
         }
     }
 }

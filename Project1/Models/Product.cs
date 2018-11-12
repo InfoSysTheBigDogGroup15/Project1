@@ -1,6 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Drawing;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -29,6 +32,10 @@ namespace Project1.Models
             this.manfacture = manfacture;
             this.location = location;
             this.language = language;
+        }
+
+        public Product()
+        {
         }
     }
 }
