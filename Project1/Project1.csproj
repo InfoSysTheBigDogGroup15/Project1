@@ -92,9 +92,15 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\GrantStyles.css" />
     <Content Include="Content\ConnorsStyles.css" />
+    <Content Include="Content\Landing.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\back.jpg" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\BambooStraws.jpg" />
+    <Content Include="Images\PaperStraws.jpg" />
+    <Content Include="Images\VioStraws.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -143,8 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Missions\" />
-    <Folder Include="Views\Contact\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

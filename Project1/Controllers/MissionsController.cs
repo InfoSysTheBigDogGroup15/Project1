@@ -14,7 +14,8 @@ namespace Project1.Controllers
         static public List<Product> ListOfProducts = new List<Product>();
         
         public ActionResult Index()
-        {   if (ListOfProducts.Count == 0)
+        {
+            if (ListOfProducts.Count == 0)
             {
                 ListOfProducts.Add(new Product("Blockchain straw", "JD", "Provo", "English"));
                 ListOfProducts.Add(new Product("Bio straw", "Me", "SLC", "English"));
@@ -40,7 +41,6 @@ namespace Project1.Controllers
                 ListOfProducts.Add(new Product("Blockchain straw", "JD", "Provo", "English"));
                 ListOfProducts.Add(new Product("Bio straw", "Me", "SLC", "English"));
                 ListOfProducts.Add(new Product("Plasma Straw", "You", "Sandy", "English"));
-
             }
             else
             {
