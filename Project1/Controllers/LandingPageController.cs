@@ -15,7 +15,7 @@ namespace Project1.Controllers
         {
             return View();
         }
-
+        [Authorize]
         public ActionResult AboutUs()
         {
             return View();
