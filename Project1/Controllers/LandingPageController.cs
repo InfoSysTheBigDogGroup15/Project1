@@ -36,7 +36,7 @@ namespace Project1.Controllers
             {
                 FormsAuthentication.SetAuthCookie(email, rememberMe);
 
-                return RedirectToAction("Index", "LandingPage");
+                return RedirectToAction("Index", "Home");
 
             }
             else
@@ -49,11 +49,11 @@ namespace Project1.Controllers
             if (User.Identity.IsAuthenticated == true)
             {
                 FormsAuthentication.SignOut();
-                return RedirectToAction("Login", "LandingPage");
+                return RedirectToAction("Login", "Home");
             }
             else
             {
-                return RedirectToAction("Login", "Landingpage");
+                return RedirectToAction("Login", "Home");
             }
         }
     }
