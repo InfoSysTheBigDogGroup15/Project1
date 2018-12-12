@@ -2,15 +2,7 @@
     ViewBag.Title = "Login";
 }
 <head>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script>
-        function signOut() {
-            var auth2 = gapi.auth2.getAuthInstance();
-            auth2.signOut().then(function () {
-                console.log('User signed out.');
-            });
-        }
-    </script>
+
     <script>
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
@@ -18,8 +10,23 @@
             console.log('Name: ' + profile.getName());
             console.log('Image URL: ' + profile.getImageUrl());
             console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-            @Html.Action("Index", "LandingPage");
+            myBitch();
+            window.location.replace("~/LandingPage/Index")
+
+            //$.get("/LandingPage/Index", function (data) {
+            //    profile;
+            //})
         }
+        function myBitch(profile) {
+            if (profile == null) {
+
+            }
+            else {
+                window.location.replace("~/LandingPage/Index")
+            }
+        }
+       
+
     </script>
     <meta name="google-signin-client_id" content="471390001196-1nk4btnrv8bkstb1qr3npl9cco5nvdpi.apps.googleusercontent.com">
 </head>
@@ -33,5 +40,5 @@
     <button type="submit">Login</button>
 }
 
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-<a href="#" onclick="signOut();">Sign out</a>   
+    <a href="@Url.Action("Index", "LandingPage")w"><div class="g-signin2" data-onsuccess="onSignIn"></div></a>
+<a href="/LandingPage/Logout" onclick="signOut();">Sign out</a>  

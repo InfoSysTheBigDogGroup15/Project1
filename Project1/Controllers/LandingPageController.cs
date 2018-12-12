@@ -44,5 +44,17 @@ namespace Project1.Controllers
                 return View();
             }
         }
+        public ActionResult Logout()
+        {
+            if (User.Identity.IsAuthenticated == true)
+            {
+                FormsAuthentication.SignOut();
+                return RedirectToAction("Login", "LandingPage");
+            }
+            else
+            {
+                return RedirectToAction("Login", "Landingpage");
+            }
+        }
     }
 }
