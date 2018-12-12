@@ -141,6 +141,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\LandingPageController.cs" />
     <Compile Include="Controllers\MissionsController.cs" />
+    <Compile Include="DAL\StrawContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
