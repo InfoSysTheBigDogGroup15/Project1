@@ -195,11 +195,15 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\LandingPageController.cs" />
     <Compile Include="Controllers\MissionsController.cs" />
+    <Compile Include="DAL\StrawContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Inventories.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Straws.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
