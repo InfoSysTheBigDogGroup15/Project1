@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project1.models
 {
@@ -16,7 +17,7 @@ namespace Project1.models
             public int inventoryID { get; set; }
 
             public int? strawID { get; set; }
-            public virtual Straw Straw { get; set; }
+            public virtual Straws Straws { get; set; }
 
 
             public int quantity { get; set; }
